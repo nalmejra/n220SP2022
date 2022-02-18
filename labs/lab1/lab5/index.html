@@ -20,21 +20,21 @@
 <body>
 
 <div id="square" onclick="fun()"></div> 
-<!------========== JavaScript Code using Script tag=======---> 
+
 <script type="text/javascript"> 
 // function fun() created here 
 function fun() { 
 //accessing the div using id square 
 var x = document.getElementById('square'); 
-//getting the width from the div and increasing 10% 
+//getting the width  
 var div_width = x.offsetWidth + (0.1 * x.offsetWidth)+"px"; 
-//getting the height from the div and increasing 10% 
+//getting the height  
 var div_height = x.offsetHeight + (0.1 * x.offsetHeight)+"px"; 
-//Setting the width of div to new div_width 
+//Setting the width of div  
 x.style.width = div_width; 
-//Setting the height of the div to new div_height 
+//Setting the height of the div  
 x.style.height = div_height; }
 </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
 </body>
 </html>
