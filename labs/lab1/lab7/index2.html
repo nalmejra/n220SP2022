@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+
+<title>Tip Calculator</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+Enter The Subtotal :
+
+
+
+<input type="text" id="txtSubtotal"/>
+
+<br> <br>
+
+
+
+<input type="button" value="Calculate Total" onclick="calcTotal()"/>
+
+
+
+<script>
+
+//function
+
+function calcTotal()
+
+{
+
+//getting subtotal entered
+
+var subtotal=document.getElementById("txtSubtotal").value;
+
+//tip is considered as 10% 
+
+var tip=subtotal*0.10;
+
+//total  
+
+var total=parseInt(subtotal)+parseInt(tip);
+
+//display total 
+
+console.log("Tip: $"+tip+" Total: $"+total);
+
+}
+
+</script>
+
+</body>
+
+</html>
