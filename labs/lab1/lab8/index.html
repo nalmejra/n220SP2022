@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Is Divisible By Seven</title>
+  </head>
+  <body>
+    <h1>Enter a number and to check divisibility with 7</h1>
+    <input type="number" id="input" />
+    <button onclick="handleClick()">Check</button>
+    <div id="output"></div>
+  </body>
+
+  <script>
+    function isDivisibleBySeven(num) {
+      return num % 7 == 0;
+    }
+    function handleClick() {
+      let input = document.getElementById("input").value;
+      document.getElementById("output").innerHTML = isDivisibleBySeven(input)
+        ? "Divisible"
+        : "Not Divisible";
+    }
+  </script>
+</html>

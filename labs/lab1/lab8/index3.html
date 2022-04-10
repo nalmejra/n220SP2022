@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cleanup</title>
+  </head>
+  <body>
+    <h1>Enter a string and click button to remove '#' from it</h1>
+    <input type="text" id="input" />
+    <button onclick="handleClick()">Check</button>
+    <div id="output"></div>
+  </body>
+
+  <script>
+    function cleanString(input) {
+      return input.replaceAll("#", "");
+    }
+    function handleClick() {
+      let input = document.getElementById("input").value;
+      document.getElementById("output").innerHTML = cleanString(input);
+    }
+  </script>
+</html>

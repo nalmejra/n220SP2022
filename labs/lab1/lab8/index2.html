@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Make Random</title>
+  </head>
+  <body>
+    <h1>CLick to get a number between 0 and 10</h1>
+    <button onclick="handleClick()">Generate</button>
+    <div id="output"></div>
+  </body>
+
+  <script>
+    function randomNum() {
+      return Math.floor(Math.random() * 10);
+    }
+    function handleClick() {
+      document.getElementById("output").innerHTML = randomNum();
+    }
+  </script>
+</html>
