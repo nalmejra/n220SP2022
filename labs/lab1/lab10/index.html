@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Color Changer</title>
+    <style>
+        div
+        {
+            width: 250px;
+            height: 250px;
+            background-color: grey;
+            float: left;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="one" data-color="darkred" onclick="fun(this)"></div>
+    <div id="two" data-color="darkgreen" onclick="fun(this)"></div>
+    <div id="three" data-color="darkblue" onclick="fun(this)"></div>
+    <script>
+        function fun(e){
+            var ele = document.getElementById(e.id);
+            ele.style.backgroundColor = ele.dataset.color;
+        }
+    </script>
+</body>
+</html>

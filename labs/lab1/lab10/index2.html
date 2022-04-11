@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Flash Cards</title>
+
+</head>
+<body>
+<h2>What is the Capital of Indiana?</h2>
+
+<button id="Indianapolis" onclick="myFunction(this.id)">Indianapolis</button>
+
+<button id="LA" onclick="myFunction(this.id)">City of Los Angeles</button>
+
+<button id="Pittsburgh" onclick="myFunction(this.id)">Pittsburgh</button>
+
+<div id="answer"><div>
+
+<script>
+
+function myFunction(clicked) {
+
+    if (clicked=="Indianapolis")
+
+    document.getElementById("answer").innerHTML = "It is Right Answer ::"+clicked;
+
+    else
+
+    document.getElementById("answer").innerHTML = "You have Choose Incorrect.True Answer is ::Indianapolis";
+}        
+
+</script>
+</body>
+</html>
