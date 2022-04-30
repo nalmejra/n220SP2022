@@ -9,14 +9,6 @@ function init() {
 	reset();
 }
 
-
-init();
-
-
-resetButton.addEventListener("click", function() {
-	reset();
-});
-
 var squares = document.querySelectorAll(".square");
 var colorDisplay = document.querySelector("#colorDisplay");
 var messageDisplay = document.querySelector("#message");
@@ -24,6 +16,14 @@ var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
 var modeButtons = document.querySelectorAll(".mode");
 var easyButton = document.querySelector(".mode");
+
+init();
+
+
+
+resetButton.addEventListener("click", function() {
+	reset();
+});
 
 function setupSquares() {
 	for (var i = 0; i < squares.length; i++) {
@@ -105,3 +105,7 @@ function makeColor() {
 	var b = Math.floor(Math.random() * 256);
 	return "rgb(" + r + ", " + g + ", " + b + ")"; 
 }
+
+
+
+
